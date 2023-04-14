@@ -1,0 +1,92 @@
+<html>
+   <head>
+      
+      <title>Radio - HomePage</title>
+      <link rel="stylesheet" href="storia.css">
+      <link rel="stylesheet" href="storiamobile.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+   <body>
+      <header>
+         <div class="nav-bar" id="nav">
+            <span class="logo" id="logo"><a href="../index.html">&pi;</a></span>
+            <span class="material-symbols-outlined menu" id="menu" onclick="myFunction()">
+               menu
+               </span>
+               <span class="material-symbols-outlined close" id="close" onclick="myClose()">
+                  close
+                  </span>
+
+            <div class="barra">
+               <div class="nav-content" id="content">
+                  <a href=""><span class="nav-text" id="nav-text1">Storia</span></a>
+                  <a href="autori/autori.html"><span class="nav-text" id="nav-text2">Descrizione</span></a>
+                  <a href="../autori/autori.html"><span class="nav-text" id="nav-text3">Autori</span></a>
+                  <a href="../Account/account.html"><span class="nav-text" id="nav-text4">ID Pi</span></a>
+                  <a href="idea/idea.html"><span class="nav-text" id="nav-text5">Idea</span></a>
+
+               </div>
+            </div>
+
+         </div>   
+
+         </div>   
+      </header>
+
+      <script>
+         function myFunction(){
+            document.getElementById("nav").classList.remove("nav-bar");
+            document.getElementById("nav").classList.add("nav");
+
+            //Mette l'icona del menu invisibile
+            document.getElementById("menu").classList.remove("menu");
+            document.getElementById("menu").classList.add("menu-invisible");
+
+            //Mette l'icona del close visibile
+            document.getElementById("close").classList.remove("close");
+            document.getElementById("close").classList.add("close-visible");
+
+            //Imposta come visibile il contenuto del menu
+            document.getElementById("content").classList.remove("nav-content");
+            document.getElementById("content").classList.add("content");
+            
+            //Imposta come block la lista del menu e ne imposta le proprietà di posizionamento
+            document.getElementById("nav-text1").classList.remove("nav-text");
+            document.getElementById("nav-text1").classList.add("nav-text-visible");
+            document.getElementById("nav-text2").classList.remove("nav-text");
+            document.getElementById("nav-text2").classList.add("nav-text-visible");
+            document.getElementById("nav-text3").classList.remove("nav-text");
+            document.getElementById("nav-text3").classList.add("nav-text-visible");
+            document.getElementById("nav-text4").classList.remove("nav-text");
+            document.getElementById("nav-text4").classList.add("nav-text-visible");
+            document.getElementById("nav-text5").classList.remove("nav-text");
+            document.getElementById("nav-text5").classList.add("nav-text-visible");
+
+
+
+
+         }
+         function myClose(){
+            //Mette l'icona del close invisibile
+            document.getElementById("close").classList.remove("close-visible");
+            document.getElementById("close").classList.add("close");
+            
+            document.getElementById("nav").classList.remove("nav");
+            document.getElementById("nav").classList.add("nav-bar");
+
+            //Mette l'icona del menu visibile
+
+            document.getElementById("menu").classList.remove("menu-invisible");
+            document.getElementById("menu").classList.add("menu");
+
+            document.getElementById("content").classList.remove("content");
+            document.getElementById("content").classList.add("nav-content");
+
+
+         }
+      </script>
+      <main>
+      </main>
+   </body>
+</html>

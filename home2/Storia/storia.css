@@ -1,0 +1,62 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+  }
+
+  @media(min-width:759px){
+    .nav-bar{
+      height:48px;
+      width:100%;
+      background-color: #151516;
+      color:white;
+      font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+      position:fixed;
+      z-index: 2;
+    }
+    .logo{
+      line-height: 48px;
+      position: absolute;
+      left:20px;
+      font-size: 25px;
+    }
+  
+    .nav-content{
+      width:50vw; 
+      display: flex;
+      justify-content: center;
+      line-height: 48px;
+      font-size:12px;
+    }
+    a{
+      width:25%;
+      text-align: center;
+    }
+    a:visited{
+      color:white;  
+    }
+    a:link{
+      opacity: 1;
+      color:white;
+      text-decoration: none;
+    }
+    .barra{
+      display: flex;
+      justify-content: center;
+    }
+
+    
+
+    .menu{
+      opacity: 0;
+      position: absolute;    
+    }
+    .close{
+      opacity: 0;
+      position: absolute;
+    }
+
+  
+  
+  
+  }
+  
